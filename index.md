@@ -27,19 +27,19 @@ title: Student Blog
     <p>My name is Colin, and I'm a student at DNHS (Del Norte High School).</p>
   </div>
   <div class="box">
-    <img src="your-image-url-here" alt="Image">
+    <img src="images/dog.png" alt="Image">
     <h2>My Family</h2>
     <p>In my close family I have my parents, my sister, and a maltipoo named Ollie. I also have a large extended family of cousins.</p>
   </div>
   <div class="box">
-    <img src="your-image-url-here" alt="Image">
+    <img src="images/controller.png" alt="Image">
     <h2>Things I like to do</h2>
-    <p>Text description</p>
+    <p>My favorite things to do are going to the beach, playing videogames, and code code coding!</p>
   </div>
   <div class="box">
-    <img src="your-image-url-here" alt="Image">
+    <img src="images/github.png" alt="Image">
     <h2>My coding journey</h2>
-    <p>Text description</p>
+    <p>I started coding in Scratch. Later, I started taking Java classes, and finally I took APCSP and now APCSA.</p>
   </div>
 </div>
 
