@@ -6,8 +6,8 @@ layout: default
 description: A common way to become familiar with a language is to build a calculator.  This calculator shows off button with actions.
 permalink: /techtalk/home_style
 categories: [C7.0]
-courses: { csa: {week: 1} }
-type: ccc
+courses: { csa: {week: 0} }
+type: hacks
 ---
 
 <!-- 
