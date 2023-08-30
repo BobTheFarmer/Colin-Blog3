@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: Java Classroom
 courses: { csa: {week: 0} }
-type: hacks
+type: tangibles
 ---
 
     import java.util.ArrayList;
