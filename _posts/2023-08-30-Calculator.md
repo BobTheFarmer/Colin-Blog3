@@ -3,7 +3,7 @@ toc: true
 comments: true
 layout: post
 title: JS Calculator
-courses: { csa: {week: 0} }
+courses: { csa: {week: 2} }
 type: hacks
 ---
 
