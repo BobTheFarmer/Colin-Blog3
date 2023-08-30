@@ -1,5 +1,4 @@
 ---
-layout: schedule
 ---
 <div class="banner">
   <img src="images/bluebinary.jpeg" alt="Banner">
