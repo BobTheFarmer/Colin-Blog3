@@ -10,6 +10,21 @@ type: tangibles
 <head>
     <title>iTunes Search API</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .result {
+            display: inline-block;
+            background-color: black;
+            color: white;
+            border-radius: 25px;
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+        }
+        .result img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>iTunes Search API</h1>
@@ -24,7 +39,15 @@ type: tangibles
                     url: 'https://itunes.apple.com/search?term=' + searchTerm,
                     dataType: 'jsonp',
                     success: function(data) {
-                        $('#results').text(JSON.stringify(data));
+                        $('#results').empty();
+                        data.results.forEach(function(result) {
+                            var $result = $('<div class="result"></div>');
+                            $result.append('<img src="' + result.artworkUrl100 + '">');
+                            $result.append('<br> <span>' + result.collectionName + '</span><br>');
+                            $result.append('<span>' + result.artistName + '</span><br>');
+                            $result.append('<button id="find-similar">Find Similar Results</button>');
+                            $('#results').append($result);
+                        });
                     }
                 });
             });
