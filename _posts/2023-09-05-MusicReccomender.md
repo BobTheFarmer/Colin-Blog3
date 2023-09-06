@@ -54,7 +54,6 @@ type: tangibles
             console.error("An error occurred while searching the iTunes Store:", error);
             });
         }
-
     </script>
     <script>
         $(document).ready(function() {
@@ -73,7 +72,7 @@ type: tangibles
                             $result.append('<span>' + result.primaryGenreName + '</span><br>');
                             var $findSimilarButton = $('<button>Find Similar Results</button>');
                             $findSimilarButton.click(function() {
-                                
+                                 $result.append(getResultTable());
                             });
                             $result.append($findSimilarButton);
                             $('#results').append($result);
