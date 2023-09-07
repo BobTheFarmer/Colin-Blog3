@@ -71,15 +71,14 @@ type: tangibles
                             $result.append('<span>' + result.artistName + '</span><br>');
                             $result.append('<span>' + result.primaryGenreName + '</span><br>');
                             var $findSimilarButton = $('<button>Find Similar Results</button>');
-                            $findSimilarButton.click(function() {
+                            /*$findSimilarButton.click(function() {
                                  $result.append(getResultTable());
-                            });
+                            });*/
                             $findSimilarButton.click(function() {
                                 var genre = result.primaryGenreName;
                                 var genreSearch = searchItunesByGenre(genre);
                             });
                             $result.append($findSimilarButton);
-                            $('#results').append($result);
                             $('#results').append($result);
                         });
                     }
