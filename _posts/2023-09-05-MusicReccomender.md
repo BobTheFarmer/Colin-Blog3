@@ -74,6 +74,10 @@ type: tangibles
                             $findSimilarButton.click(function() {
                                  $result.append(getResultTable());
                             });
+                            $findSimilarButton.click(function() {
+                                var genre = result.primaryGenreName;
+                                var genreSearch = searchItunesByGenre(genre);
+                            });
                             $result.append($findSimilarButton);
                             $('#results').append($result);
                             $('#results').append($result);
