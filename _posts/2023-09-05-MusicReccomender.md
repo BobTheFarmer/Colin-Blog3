@@ -32,8 +32,6 @@ type: tangibles
     <button id="search-button">Search</button>
     <div id="results"></div>
     <script>
-    function getSimilarTable(genre) {
-    }
     function searchItunesByGenre(genre) {
         const baseUrl = "https://itunes.apple.com/search";
         const params = new URLSearchParams({
@@ -71,9 +69,6 @@ type: tangibles
                             $result.append('<span>' + result.artistName + '</span><br>');
                             $result.append('<span>' + result.primaryGenreName + '</span><br>');
                             var $findSimilarButton = $('<button>Find Similar Results</button>');
-                            *$findSimilarButton.click(function() {
-                                 $result.append(getResultTable(result.primaryGenreName));
-                            });
                             $findSimilarButton.click(function() {
                                 var genre = result.primaryGenreName;
                                 var genreSearch = searchItunesByGenre(genre);
